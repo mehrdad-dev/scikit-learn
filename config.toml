@@ -38,13 +38,12 @@ text_color = "#636363"
 text_color_dark = "#242738"
 white_color = "#ffffff"
 light_color = "#f8f9fa"
-gradiant_home_color = "linear-gradient(160deg, rgba(42,98,128,1) 0%, rgba(52,153,205,1) 17%, rgba(255,243,211,1) 59%, rgba(255,178,96,1) 100%)"
 
 # font family
 font_family = "Vazir" # Choose font family from : https://fonts.google.com/
 
 # contact form action
-contact_form_action = "#" # contact form works with : https://formspree.io
+contact_form_action = "mzbjjnev" # contact form works with : https://formspree.io
 
 
 ############################## social links ##############################
@@ -133,7 +132,7 @@ link = "https://github.com/mehrdad-dev/scikit-learn"
 languageName = "Fa"
 languageCode = "fa-ir"
 weight = 1
-copyright = "تمامی حقوق این وب سایت تحت لایسنس [BSD-3-Clause License]() محفوظ است."
+copyright = "تمامی حقوق این وب سایت تحت لایسنس [BSD-3-Clause License](https://github.com/mehrdad-dev/scikit-learn/blob/main/LICENSE) محفوظ است."
 
 # banner
 [Languages.fa.params.banner]
