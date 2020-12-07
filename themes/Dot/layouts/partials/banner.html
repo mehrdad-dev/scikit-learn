@@ -1,0 +1,46 @@
+{{ "<!-- banner -->" | safeHTML }}
+<div class="container section">
+	<div class="row">
+		<div class="col-lg-8 text-right mx-auto">
+			<h1 align="right" dir="rtl" class="text-white mb-3">{{ .Site.Params.banner.title | markdownify }}</h1>
+			<p align="right" dir="rtl" class="text-white mb-4">{{ .Site.Params.banner.subtitle | markdownify }}</p>
+
+			<div dir="rtl" class="home-btn">
+			<a href="getting-started" class="btn btn-primary mb-1">شروع به کار</a>
+			<a href="{{ .Site.Params.latest_version }}" class="btn btn-primary mb-1">نسخه ۰.۲۳</a>
+			<a href="{{ .Site.Params.github_link }}" class="btn btn-primary mb-1">گیت هاب</a>
+			</div>
+
+			<div class="position-relative">
+				<input dir="rtl" id="search" class="form-control" placeholder="{{ .Site.Params.banner.placeholder }}">
+				<i class="ti-search search-icon"></i>
+				<!-- Javascript -->
+				{{ $currentNode := . }}
+				{{ $currentNode.Scratch.Set "pages" .Site.Pages }}
+				{{ $pages := ($currentNode.Scratch.Get "pages") }}
+				<script>
+					$(function() {
+					var projects = [
+						{{ range $pages }}
+						{
+							value: "{{ .Title }}",
+							label: "<p>{{.Plain}}</p>{{range.Params.Keywords}}<p>{{.}}</p>{{end}}",
+							url:"{{ .Permalink }}"
+						},
+						{{ end }}
+					];
+					$( "#search" ).autocomplete({
+						source: projects
+					})
+					.data( "ui-autocomplete" )._renderItem = function( ul, item ) {
+						return $( "<li>" )
+						.append( "<a href=" + item.url + " + \" &quot;\" +  >" + item.value + "</a>" + item.label )
+						.appendTo( ul );
+					};
+					});
+				</script>
+			</div>
+		</div>
+	</div>
+</div>
+{{ "<!-- /banner -->" | safeHTML }}
