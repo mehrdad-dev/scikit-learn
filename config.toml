@@ -1,6 +1,6 @@
 ################################# Default configuration ###################
 # provide your domain here
-baseURL = "https://mehrdad-dev.github.io/scikit-learn"
+baseURL = "https://sklearn.ir"
 # theme
 theme = "Dot"
 
