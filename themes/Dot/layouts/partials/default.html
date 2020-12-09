@@ -21,7 +21,7 @@
           {{ if .Content }}
           <div dir="rtl" align="right" class="content">{{.Content}}</div>
           {{ else }}
-          <div class="bg-light p-4">
+          <div  dir="rtl" align="right" class="bg-light p-4">
             <ul class="page-list">
               {{ template "section-tree-nav" dict "sect" . "currentnode" $currentNode }}
             </ul>
