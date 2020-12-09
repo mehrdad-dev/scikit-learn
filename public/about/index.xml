@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>درباره ما on scikit-learn به فارسی</title>
+    <link>https://sklearn.ir/about/</link>
+    <description>Recent content in درباره ما on scikit-learn به فارسی</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fa-ir</language>
+    <copyright>تمامی حقوق این وب سایت تحت لایسنس [BSD-3-Clause License](https://github.com/mehrdad-dev/scikit-learn/blob/main/LICENSE) محفوظ است.</copyright>
+    
+	<atom:link href="https://sklearn.ir/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>
