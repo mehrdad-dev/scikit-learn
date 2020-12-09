@@ -14,6 +14,7 @@
 
 sklearn.ir وب سایت ترجمه آزاد مستندات آموزش کار با کتابخانه یادگیری ماشین scikit-learn است.
 
+وب سایت رسمی scikit-learn:   https://scikit-learn.org
 
 ## مشارکت
 
