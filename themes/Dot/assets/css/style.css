@@ -32,6 +32,8 @@ h1,
 h2,
 .h2 {
   font-size: 32px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 h3,
@@ -88,7 +90,7 @@ h6,
 }
 
 .btn-primary:hover {
-  background:    rgba(42, 98, 128, 1) 59%;
+  background:   #f6830f ;
 }
 
 .btn-primary:not(:disabled):not(.disabled).active,
@@ -185,6 +187,12 @@ select:focus {
   padding-bottom: 80px;
 }
 
+.donate-section {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
 @media (max-width: 768px) {
   .section {
     padding-top: 60px;
@@ -204,6 +212,17 @@ select:focus {
 
 .section-title {
   margin-bottom: 40px;
+}
+
+.section-title-home {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .section-title-home {
+    margin-bottom: 40px;
+    font-size: 26px;
+  }
 }
 
 .bg-cover {
@@ -572,6 +591,7 @@ textarea.form-control {
   background: var(--primary-color);
   opacity: 0.3;
   left: 0;
+  margin-left: 700px;
   top: 8px;
 }
 
@@ -602,8 +622,9 @@ blockquote {
   font-size: 20px !important;
   color: var(--text-color-dark);
   padding: 20px 40px;
-  border-left: 2px solid var(--primary-color);
+  border-right: 5px solid var(--primary-color);
   margin: 40px 0;
+  border-radius: 10px;
   font-weight: bold;
   background: var(--light-color);
 }
@@ -681,7 +702,7 @@ tbody {
 }
 
 .notices.note p::after {
-  content: "Note";
+  content: "توجه";
   position: absolute;
   top: 2px;
   color: #fff;
@@ -694,7 +715,7 @@ tbody {
 }
 
 .notices.tip p::after {
-  content: "Tip";
+  content: "نکته";
   position: absolute;
   top: 2px;
   color: #fff;
@@ -707,7 +728,7 @@ tbody {
 }
 
 .notices.info p::after {
-  content: "Info";
+  content: "اطلاعات";
   position: absolute;
   top: 2px;
   color: #fff;
@@ -720,7 +741,7 @@ tbody {
 }
 
 .notices.warning p::after {
-  content: "Warning";
+  content: "هشدار";
   position: absolute;
   top: 2px;
   color: #fff;
