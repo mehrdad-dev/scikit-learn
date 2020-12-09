@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://sklearn.ir/getting-started/fitting-and-predicting-estimator-basics/</loc>
+    <lastmod>2020-12-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://sklearn.ir/classification/ownership/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
@@ -18,6 +23,11 @@
   </url>
   
   <url>
+    <loc>https://sklearn.ir/getting-started/transformers-and-preprocessors/</loc>
+    <lastmod>2020-12-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://sklearn.ir/regression/install/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
@@ -30,6 +40,11 @@
   <url>
     <loc>https://sklearn.ir/classification/manage/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sklearn.ir/getting-started/pipelines-chaining-pre-processors-and-estimators/</loc>
+    <lastmod>2020-12-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -53,6 +68,11 @@
   </url>
   
   <url>
+    <loc>https://sklearn.ir/getting-started/model-evaluation/</loc>
+    <lastmod>2020-12-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://sklearn.ir/regression/customization/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
@@ -68,6 +88,11 @@
   </url>
   
   <url>
+    <loc>https://sklearn.ir/getting-started/automatic-parameter-searches/</loc>
+    <lastmod>2020-12-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://sklearn.ir/classification/profile/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
@@ -78,8 +103,18 @@
   </url>
   
   <url>
+    <loc>https://sklearn.ir/getting-started/next-steps/</loc>
+    <lastmod>2020-12-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://sklearn.ir/</loc>
-    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <lastmod>2020-12-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sklearn.ir/getting-started/</loc>
+    <lastmod>2020-12-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -134,10 +169,6 @@
   
   <url>
     <loc>https://sklearn.ir/faq/</loc>
-  </url>
-  
-  <url>
-    <loc>https://sklearn.ir/getting-started/</loc>
   </url>
   
 </urlset>
