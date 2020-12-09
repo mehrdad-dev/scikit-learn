@@ -152,6 +152,13 @@ enable = true
 label = "ارتباط با ما"
 link = "contact"
 
+# donate
+[Languages.fa.params.donate]
+enable = true
+title = "حمایت از ما ❤️ "
+content = "اگر به این دست از محتوا ها و کار های آزاد علاقه دارید از  طریق صفحه [حمایت مالی](https://sklearn.ir/donate) از ما حمایت کنید 💸"
+
+
 
 ################## farsi navigation #################
 [[Languages.fa.menu.main]]
@@ -172,7 +179,7 @@ weight = 5
 
 # Dropdown menu
 [[Languages.fa.menu.main]]
-weight = 6
+weight = 7
 name = "بیشتر"
 hasChildren = true
 
@@ -184,36 +191,24 @@ hasChildren = true
 
   [[Languages.fa.menu.main]]
   parent = "بیشتر"
-  name = "گیت هاب"
-  url = "https://github.com/mehrdad-dev/scikit-learn"
+  name = "حمایت مالی"
+  url = "donate"
   weight = 2
 
-  # [[Languages.fa.menu.main]]
-  # parent = "بیشتر"
-  # name = "رگرسیون"
-  # url = "installation"
-  # weight = 2
-
-  # [[Languages.fa.menu.main]]
-  # parent = "بیشتر"
-  # name = "طبقه بندی"
-  # url = "billing-pricing"
-  # weight = 2
-
-  # [[Languages.fa.menu.main]]
-  # parent = "بیشتر"
-  # name = "خوشه بندی"
-  # url = "features"
-  # weight = 3
+  [[Languages.fa.menu.main]]
+  parent = "بیشتر"
+  name = "گیت هاب"
+  url = "https://github.com/mehrdad-dev/scikit-learn"
+  weight = 3
 
   [[Languages.fa.menu.main]]
   parent = "بیشتر"
   name = "ارتباط با ما"
   url = "contact"
-  weight = 3
+  weight = 4
 
   [[Languages.fa.menu.main]]
   parent = "بیشتر"
   name = "درباره ما"
   url = "about"
-  weight = 4
+  weight = 5
