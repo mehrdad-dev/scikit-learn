@@ -1,7 +1,7 @@
 ---
 title: "طبقه بندی"
 date: 2018-12-28T11:02:05+06:00
-icon: "ti-credit-card"
+icon: "ti-layout-menu-v"
 description: "تست"
 type : "docs"
 ---
