@@ -7,7 +7,7 @@
       <div  dir="rtl" align="right" class="col-12">
         <h2 class="section-title text-primary">{{ .Title }}</h2>
         {{ .Content }}
-        <form action="{{ .Site.Params.contact_form_action | safeURL }}">
+        <form style="margin-top: 30px;" action="{{ .Site.Params.contact_form_action | safeURL }}">
           <input type="text" id="name" name="name" placeholder="نام" class="form-control mb-4 shadow rounded-0">
           <input  type="email" id="mail" name="mail" placeholder="ایمیل" class="form-control mb-4 shadow rounded-0">
           <input  type="text" id="subject" name="subject" placeholder="موضوع"
