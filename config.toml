@@ -34,7 +34,7 @@ latest_version = "https://scikit-learn.org/stable/auto_examples/release_highligh
 # customize color
 primary_color = "#ff9c34"
 body_color = "#f9f9f9"
-text_color = "#636363"
+text_color = "#242738"
 text_color_dark = "#242738"
 white_color = "#ffffff"
 light_color = "#f8f9fa"
