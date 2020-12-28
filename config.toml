@@ -29,7 +29,10 @@ logo_white = ""
 github_link = "https://github.com/mehrdad-dev/scikit-learn"
 
 # latest version
-latest_version = "https://scikit-learn.org/stable/auto_examples/release_highlights/plot_release_highlights_0_23_0.html"
+latest_version = "https://scikit-learn.org/stable/auto_examples/release_highlights/plot_release_highlights_0_24_0.html"
+
+# translate process
+translate_process =  "https://sklearn.ir/translate"
 
 # customize color
 primary_color = "#ff9c34"
@@ -197,18 +200,24 @@ hasChildren = true
 
   [[Languages.fa.menu.main]]
   parent = "بیشتر"
+  name = "روند ترجمه"
+  url = "translate"
+  weight = 3
+
+  [[Languages.fa.menu.main]]
+  parent = "بیشتر"
   name = "گیت هاب"
   url = "https://github.com/mehrdad-dev/scikit-learn"
-  weight = 3
+  weight = 4
 
   [[Languages.fa.menu.main]]
   parent = "بیشتر"
   name = "ارتباط با ما"
   url = "contact"
-  weight = 4
+  weight = 5
 
   [[Languages.fa.menu.main]]
   parent = "بیشتر"
   name = "درباره ما"
   url = "about"
-  weight = 5
+  weight = 6
