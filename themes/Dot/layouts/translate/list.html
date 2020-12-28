@@ -1,0 +1,16 @@
+{{ define "main" }}
+
+{{ "<!-- contact -->" | safeHTML }}
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div  dir="rtl" align="right" class="col-12" style="margin-top: -30px;">
+        <h2 class="section-title text-primary">{{ .Title }}</h2>
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ "<!-- /contact -->" | safeHTML }}
+
+{{ end }}

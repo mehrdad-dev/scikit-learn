@@ -298,11 +298,26 @@ pre {
   margin-right: -150px;
 }
 
+.translate-process-test {
+  color: white;
+  margin-right: -150px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
 @media (max-width: 768px) {
   .text-white {
-    font-size: 33px;
+    font-size: 31px;
     color: var(--white-color) !important;
     margin-right: 0;
+  }
+
+  .translate-process-test {
+    color: white;
+    margin-right: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 
