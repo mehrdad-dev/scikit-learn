@@ -2,8 +2,11 @@
 <html lang="fa-ir">
   <head>
   <meta charset="utf-8">
-  <title>ترانسفورماتورها و پیش پردازنده ها</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>ترانسفورماتور ها و پیش پردازنده ها</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  
+  <meta name="theme-color" content="#f37121"/>
+
   <meta name="generator" content="Hugo 0.74.3" />
   
   <!-- ** CSS Plugins Needed for the Project ** -->
@@ -79,7 +82,7 @@
     </a>
     <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
       aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon" style="background-color: rgba(168, 168, 168, 0.507);"></span>
     </button>
 
     <div class="collapse navbar-collapse text-center" id="navigation">
@@ -114,6 +117,8 @@
             <a class="dropdown-item" href="https://sklearn.ir/faq">سوالات متداول</a>
             
             <a class="dropdown-item" href="https://sklearn.ir/donate">حمایت مالی</a>
+            
+            <a class="dropdown-item" href="https://sklearn.ir/translate">روند ترجمه</a>
             
             <a class="dropdown-item" href="https://github.com/mehrdad-dev/scikit-learn">گیت هاب</a>
             
@@ -199,10 +204,10 @@
 
 
 
-<li data-nav-id="https://sklearn.ir/getting-started/transformers-and-preprocessors/" title="ترانسفورماتورها و پیش پردازنده ها" class="sidelist
+<li data-nav-id="https://sklearn.ir/getting-started/transformers-and-preprocessors/" title="ترانسفورماتور ها و پیش پردازنده ها" class="sidelist
   active">
   <a href="https://sklearn.ir/getting-started/transformers-and-preprocessors/">
-    ترانسفورماتورها و پیش پردازنده ها
+    ترانسفورماتور ها و پیش پردازنده ها
   </a>
   
   
@@ -221,10 +226,10 @@
 
 
 
-<li data-nav-id="https://sklearn.ir/getting-started/pipelines-chaining-pre-processors-and-estimators/" title="پیش پردازنده های زنجیره ای و برآوردگرها" class="sidelist
+<li data-nav-id="https://sklearn.ir/getting-started/pipelines-chaining-pre-processors-and-estimators/" title="پایپ لاین ها: پیش پردازنده های زنجیره ای و برآوردگر ها" class="sidelist
   ">
   <a href="https://sklearn.ir/getting-started/pipelines-chaining-pre-processors-and-estimators/">
-    پیش پردازنده های زنجیره ای و برآوردگرها
+    پایپ لاین ها: پیش پردازنده های زنجیره ای و برآوردگر ها
   </a>
   
   
@@ -326,38 +331,39 @@
             
               
             
+              
+            
           </ul>
         </div>
       </div>
       <div class="col-lg-9">
         <div class="p-lg-5 p-4 bg-white">
-          <h2  dir="rtl" align="right" class="mb-5">ترانسفورماتورها و پیش پردازنده ها</h2>
+          <h2  dir="rtl" align="right" class="mb-5">ترانسفورماتور ها و پیش پردازنده ها</h2>
           
-          <div  dir="rtl" align="right" class="bg-light p-4">
-            <ul class="page-list">
-              
-
-
-
-
-
-
-
-
-<li data-nav-id="https://sklearn.ir/getting-started/transformers-and-preprocessors/" title="ترانسفورماتورها و پیش پردازنده ها" class="sidelist
-  active">
-  <a href="https://sklearn.ir/getting-started/transformers-and-preprocessors/">
-    ترانسفورماتورها و پیش پردازنده ها
-  </a>
-  
-  
-</li>
-
-
-            </ul>
-          </div>
+          <div dir="rtl" align="right" class="content"><p>جریان کاری یادگیری ماشین اغلب از قسمت های مختلفی تشکیل شده است.
+یک پایپ لاین معمول و متداول تشکیل شده از یک مرحله پیش پردازش است که داده ها را
+transform یا imputes می‌کند،
+و در نهایت یک پیش‌بینی کننده مقادیر هدف را پیش‌بینی می‌کند.</p>
+<p>در <code>scikit-learn</code>،
+پیش پردازنده ها و ترانسفورماتورها به دنباله API مشابه ای که
+برای براوردگر استفاده می‌کنیم می‌آیند.
+(در واقع همه آن ها از یک کلاس به اسم <code>BaseEstimator</code> ارث می‌برند.)</p>
+<p>اشیاء ترانسفورماتور متد
+<a href="https://scikit-learn.org/stable/glossary.html#term-predict">predict</a>
+ندارند بلکه یک متد
+<a href="https://scikit-learn.org/stable/glossary.html#term-transform">transform</a>
+دارند که به عنوان خروجی ماتریس X که دگرگون شده است را می‌دهند:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> sklearn.preprocessing <span style="color:#f92672">import</span> StandardScaler
+X <span style="color:#f92672">=</span> [[<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">15</span>],
+     [<span style="color:#ae81ff">1</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">10</span>]]
+<span style="color:#75715e"># scale data according to computed scaling values</span>
+StandardScaler()<span style="color:#f92672">.</span>fit(X)<span style="color:#f92672">.</span>transform(X)
+</code></pre></div><p>گاهی اوقات، شما می‌خواهید تغییرات مختلفی را در ویژگی های مختلف اعمال کنید:
+<a href="https://scikit-learn.org/stable/modules/compose.html#column-transformer">ColumnTransformer</a>
+برای این موارد استفاده طراحی شده است.</p>
+</div>
           
-          <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 09 Dec 2020</p>
+          <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 28 Dec 2020</p>
           <nav class="pagination mt-3">
             
             
@@ -763,12 +769,28 @@
             
             
             
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
 
             
             <a class="nav nav-prev" href="https://sklearn.ir/getting-started/fitting-and-predicting-estimator-basics/"><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">برازش و پیش بینی: اصول برآوردگر</span></a>
             
             
-            <a class="nav nav-next" href="https://sklearn.ir/getting-started/pipelines-chaining-pre-processors-and-estimators/"> <span class="d-none d-md-block">پیش پردازنده های زنجیره ای و برآوردگرها</span><i class="ti-arrow-right ml-2"></i></a>
+            <a class="nav nav-next" href="https://sklearn.ir/getting-started/pipelines-chaining-pre-processors-and-estimators/"> <span class="d-none d-md-block">پایپ لاین ها: پیش پردازنده های زنجیره ای و برآوردگر ها</span><i class="ti-arrow-right ml-2"></i></a>
             
           </nav>
         </div>

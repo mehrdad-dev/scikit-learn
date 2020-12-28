@@ -3,7 +3,10 @@
   <head>
   <meta charset="utf-8">
   <title>جستجوی خودکار پارامتر ها</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  
+  <meta name="theme-color" content="#f37121"/>
+
   <meta name="generator" content="Hugo 0.74.3" />
   
   <!-- ** CSS Plugins Needed for the Project ** -->
@@ -79,7 +82,7 @@
     </a>
     <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
       aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon" style="background-color: rgba(168, 168, 168, 0.507);"></span>
     </button>
 
     <div class="collapse navbar-collapse text-center" id="navigation">
@@ -114,6 +117,8 @@
             <a class="dropdown-item" href="https://sklearn.ir/faq">سوالات متداول</a>
             
             <a class="dropdown-item" href="https://sklearn.ir/donate">حمایت مالی</a>
+            
+            <a class="dropdown-item" href="https://sklearn.ir/translate">روند ترجمه</a>
             
             <a class="dropdown-item" href="https://github.com/mehrdad-dev/scikit-learn">گیت هاب</a>
             
@@ -199,10 +204,10 @@
 
 
 
-<li data-nav-id="https://sklearn.ir/getting-started/transformers-and-preprocessors/" title="ترانسفورماتورها و پیش پردازنده ها" class="sidelist
+<li data-nav-id="https://sklearn.ir/getting-started/transformers-and-preprocessors/" title="ترانسفورماتور ها و پیش پردازنده ها" class="sidelist
   ">
   <a href="https://sklearn.ir/getting-started/transformers-and-preprocessors/">
-    ترانسفورماتورها و پیش پردازنده ها
+    ترانسفورماتور ها و پیش پردازنده ها
   </a>
   
   
@@ -221,10 +226,10 @@
 
 
 
-<li data-nav-id="https://sklearn.ir/getting-started/pipelines-chaining-pre-processors-and-estimators/" title="پیش پردازنده های زنجیره ای و برآوردگرها" class="sidelist
+<li data-nav-id="https://sklearn.ir/getting-started/pipelines-chaining-pre-processors-and-estimators/" title="پایپ لاین ها: پیش پردازنده های زنجیره ای و برآوردگر ها" class="sidelist
   ">
   <a href="https://sklearn.ir/getting-started/pipelines-chaining-pre-processors-and-estimators/">
-    پیش پردازنده های زنجیره ای و برآوردگرها
+    پایپ لاین ها: پیش پردازنده های زنجیره ای و برآوردگر ها
   </a>
   
   
@@ -326,6 +331,8 @@
             
               
             
+              
+            
           </ul>
         </div>
       </div>
@@ -333,31 +340,64 @@
         <div class="p-lg-5 p-4 bg-white">
           <h2  dir="rtl" align="right" class="mb-5">جستجوی خودکار پارامتر ها</h2>
           
-          <div  dir="rtl" align="right" class="bg-light p-4">
-            <ul class="page-list">
-              
+          <div dir="rtl" align="right" class="content"><p>همه برآوردگرها دارای پارامترهایی هستند (که در ادبیات اغلب به آنها hyper-parameter یا  اَبَرپارامتر گفته می‌شود) كه می توانند تنظیم شوند.</p>
+<p>قدرت تعمیم یک برآوردگر اغلب به چند پارامتر بستگی دارد.
+به عنوان مثال یک
+<a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html#sklearn.ensemble.RandomForestRegressor">RandomForestRegressor</a>
+دارای یک پارامتر <code>n_estimators</code> است که تعداد درختان در جنگل را تعیین می‌کند،
+و یک پارامتر <code>max_depth</code> که حداکثر عمق هر درخت را تعیین می‌کند.
+اغلب اوقات، مشخص نیست که مقادیر دقیق این پارامترها باید چه باشد، زیرا آنها به داده های موجود بستگی دارند.</p>
+<p><code>Scikit-learn</code> ابزارهایی را برای یافتن خودکار بهترین ترکیبات پارامترها (از طریق اعتبار سنجی متقابل) فراهم می‌کند.
+در مثال زیر، ما به طور تصادفی در فضای پارامتر یک جنگل تصادفی توسط یک شی
+<a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.RandomizedSearchCV.html#sklearn.model_selection.RandomizedSearchCV">RandomizedSearchCV</a>
+جستجو می‌کنیم.</p>
+<p>وقتی جستجو به پایان رسید
+<a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.RandomizedSearchCV.html#sklearn.model_selection.RandomizedSearchCV">RandomizedSearchCV</a>
+به عنوان
+<a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html#sklearn.ensemble.RandomForestRegressor">RandomForestRegressor</a>
+رفتار می‌کند که با بهترین مجموعه پارامترها مجهز شده است.
+در
+<a href="https://scikit-learn.org/stable/modules/grid_search.html#grid-search">راهنمای کاربر</a>
+بیشتر بخوانید:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> sklearn.datasets <span style="color:#f92672">import</span> fetch_california_housing
+<span style="color:#f92672">from</span> sklearn.ensemble <span style="color:#f92672">import</span> RandomForestRegressor
+<span style="color:#f92672">from</span> sklearn.model_selection <span style="color:#f92672">import</span> RandomizedSearchCV
+<span style="color:#f92672">from</span> sklearn.model_selection <span style="color:#f92672">import</span> train_test_split
+<span style="color:#f92672">from</span> scipy.stats <span style="color:#f92672">import</span> randint
 
+X, y <span style="color:#f92672">=</span> fetch_california_housing(return_X_y<span style="color:#f92672">=</span>True)
+X_train, X_test, y_train, y_test <span style="color:#f92672">=</span> train_test_split(X, y, random_state<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
 
+<span style="color:#75715e"># define the parameter space that will be searched over</span>
+param_distributions <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;n_estimators&#39;</span>: randint(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">5</span>),
+                       <span style="color:#e6db74">&#39;max_depth&#39;</span>: randint(<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">10</span>)}
 
+<span style="color:#75715e"># now create a searchCV object and fit it to the data</span>
+search <span style="color:#f92672">=</span> RandomizedSearchCV(estimator<span style="color:#f92672">=</span>RandomForestRegressor(random_state<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>),
+                            n_iter<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>,
+                            param_distributions<span style="color:#f92672">=</span>param_distributions,
+                            random_state<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+search<span style="color:#f92672">.</span>fit(X_train, y_train)
 
+search<span style="color:#f92672">.</span>best_params_
 
+<span style="color:#75715e"># the search object now acts like a normal random forest estimator</span>
+<span style="color:#75715e"># with max_depth=9 and n_estimators=4</span>
+search<span style="color:#f92672">.</span>score(X_test, y_test)
+</code></pre></div>
 
+<div class="notices note" ><p>توجه:
+در عمل، تقریباً همیشه می‌خواهید به جای یک برآوردگر تنها،
+<a href="https://scikit-learn.org/stable/modules/grid_search.html#composite-grid-search">در یک پایپ لاین جستجو کنید.</a>
+یکی از دلایل اصلی این است که اگر یک مرحله پیش پردازش را بدون استفاده از پایپ لاین در کل مجموعه داده اعمال کنید و سپس هر نوع اعتبار سنجی متقابل را انجام دهید،
+شما فرضیه اساسی استقلال بین داده های آموزش و آزمون را خواهید شکست.
+در واقع، از آنجا که داده ها را با استفاده از کل مجموعه داده پیش پردازش کرده اید، برخی از اطلاعات مربوط به مجموعه های آزمون در دسترس مجموعه های آموزش است.
+این امر منجر به تخمین بیش از حدی برای قدرت تعمیم برآوردگر می‌شود (می‌توانید اطلاعات بیشتر را در این <a href="https://www.kaggle.com/alexisbcook/data-leakage">پست Kaggle</a> دریافت کنید).
+استفاده از خط لوله برای اعتبار سنجی متقابل و جستجو تا حد زیادی شما را از دام این تله دور می‌کند.</p></div>
 
-
-<li data-nav-id="https://sklearn.ir/getting-started/automatic-parameter-searches/" title="جستجوی خودکار پارامتر ها" class="sidelist
-  active">
-  <a href="https://sklearn.ir/getting-started/automatic-parameter-searches/">
-    جستجوی خودکار پارامتر ها
-  </a>
-  
-  
-</li>
-
-
-            </ul>
-          </div>
+</div>
           
-          <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 09 Dec 2020</p>
+          <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 28 Dec 2020</p>
           <nav class="pagination mt-3">
             
             
@@ -612,6 +652,22 @@
             
             
             
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
             
             
             

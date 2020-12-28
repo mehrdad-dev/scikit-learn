@@ -3,7 +3,10 @@
   <head>
   <meta charset="utf-8">
   <title>scikit-learn به فارسی</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  
+  <meta name="theme-color" content="#f37121"/>
+
   <meta name="generator" content="Hugo 0.74.3" />
   
   <!-- ** CSS Plugins Needed for the Project ** -->
@@ -80,7 +83,7 @@
     </a>
     <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
       aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon" style="background-color: rgba(168, 168, 168, 0.507);"></span>
     </button>
 
     <div class="collapse navbar-collapse text-center" id="navigation">
@@ -116,6 +119,8 @@
             
             <a class="dropdown-item" href="https://sklearn.ir/donate">حمایت مالی</a>
             
+            <a class="dropdown-item" href="https://sklearn.ir/translate">روند ترجمه</a>
+            
             <a class="dropdown-item" href="https://github.com/mehrdad-dev/scikit-learn">گیت هاب</a>
             
             <a class="dropdown-item" href="https://sklearn.ir/contact">ارتباط با ما</a>
@@ -138,12 +143,14 @@
 		<div class="col-lg-8 text-right mx-auto">
 			<h1 align="right" dir="rtl" class="text-white mb-3">scikit-learn به فارسی</h1>
 			<p align="right" dir="rtl" class="text-white mb-4">یادگیری ماشین در پایتون</p>
+			<a align="right" dir="rtl" href="https://sklearn.ir/translate" class="translate-process-test"> > مشاهده روند ترجمه مستندات </a>
 
 			<div dir="rtl" class="home-btn">
-			<a href="getting-started" class="btn btn-primary mb-1">شروع به کار</a>
-			<a href="https://scikit-learn.org/stable/auto_examples/release_highlights/plot_release_highlights_0_23_0.html" class="btn btn-primary mb-1">نسخه ۰.۲۳</a>
-			<a href="https://github.com/mehrdad-dev/scikit-learn" class="btn btn-primary mb-1">گیت هاب</a>
+			<a href="getting-started" class="btn btn-primary mb-1" style="margin-top: 10px;">شروع به کار</a>
+			<a href="https://scikit-learn.org/stable/auto_examples/release_highlights/plot_release_highlights_0_24_0.html" class="btn btn-primary mb-1"style="margin-top: 10px;" >نسخه ۰.۲۴</a>
+			<a href="https://github.com/mehrdad-dev/scikit-learn" class="btn btn-primary mb-1" style="margin-top: 10px;">گیت هاب</a>
 			</div>
+
 
 			<div class="position-relative">
 				<input dir="rtl" id="search" class="form-control" placeholder="به دنبال چیزی می‌گردید؟ تایپ کنید ...">
@@ -169,8 +176,8 @@
 						},
 						
 						{
-							value: "ترانسفورماتورها و پیش پردازنده ها",
-							label: "<p></p><p>ترانسفورماتورها</p><p>پیش پردازنده ها</p>",
+							value: "ترانسفورماتور ها و پیش پردازنده ها",
+							label: "<p>جریان کاری یادگیری ماشین اغلب از قسمت های مختلفی تشکیل شده است. یک پایپ لاین معمول و متداول تشکیل شده از یک مرحله پیش پردازش است که داده ها را transform یا imputes می‌کند، و در نهایت یک پیش‌بینی کننده مقادیر هدف را پیش‌بینی می‌کند.\nدر scikit-learn، پیش پردازنده ها و ترانسفورماتورها به دنباله API مشابه ای که برای براوردگر استفاده می‌کنیم می‌آیند. (در واقع همه آن ها از یک کلاس به اسم BaseEstimator ارث می‌برند.)\nاشیاء ترانسفورماتور متد predict ندارند بلکه یک متد transform دارند که به عنوان خروجی ماتریس X که دگرگون شده است را می‌دهند:\nfrom sklearn.preprocessing import StandardScaler X = [[0, 15], [1, -10]] # scale data according to computed scaling values StandardScaler().fit(X).transform(X) گاهی اوقات، شما می‌خواهید تغییرات مختلفی را در ویژگی های مختلف اعمال کنید: ColumnTransformer برای این موارد استفاده طراحی شده است.\n</p><p>ترانسفورماتور ها</p><p>پیش پردازنده ها</p>",
 							url:"https:\/\/sklearn.ir\/getting-started\/transformers-and-preprocessors\/"
 						},
 						
@@ -181,8 +188,8 @@
 						},
 						
 						{
-							value: "پیش پردازنده های زنجیره ای و برآوردگرها",
-							label: "<p></p><p></p>",
+							value: "پایپ لاین ها: پیش پردازنده های زنجیره ای و برآوردگر ها",
+							label: "<p>ترانسفورماتورها و برآوردگرها (پیش بینی کننده ها) می‌توانند با هم در یک شی واحد ترکیب شوند: یک Pipeline\nPipeline همان API را به عنوان یک برآوردگر منظم ارائه می‌دهد: که می‌تواند متناسب شود و برای پیش‌بینی ها استفاده شود توسط fit و predict. همانطور که بعدا خواهیم دید، استفاده از پایپ لاین همچنین از نشت داده ها جلوگیری می‌‌کند. به طور مثال برخی داده های آزمون در داده های آموزش شما افشا می‌شوند.\nدر مثال زیر، مجموعه داده Iris را بارگذاری می‌کنیم، آن را به مجموعه آزمون و آزمایش تقسیم می‌کنیم، و معیار accuracy یک پایپ لاین را بر روی داده های آزمون محاسبه می‌کنیم:\nfrom sklearn.preprocessing import StandardScaler from sklearn.linear_model import LogisticRegression from sklearn.pipeline import make_pipeline from sklearn.datasets import load_iris from sklearn.model_selection import train_test_split from sklearn.metrics import accuracy_score # create a pipeline object pipe = make_pipeline( StandardScaler(), LogisticRegression() ) # load the iris dataset and split it into train and test sets X, y = load_iris(return_X_y=True) X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=0) # fit the whole pipeline pipe.fit(X_train, y_train) # we can now use it like any other estimator accuracy_score(pipe.predict(X_test), y_test) </p><p>برآوردگر ها</p><p>پیش پردازنده ها</p>",
 							url:"https:\/\/sklearn.ir\/getting-started\/pipelines-chaining-pre-processors-and-estimators\/"
 						},
 						
@@ -200,7 +207,7 @@
 						
 						{
 							value: "ارزیابی مدل",
-							label: "<p></p><p></p>",
+							label: "<p>متاسب کردن یک مدل بر روی برخی از داده ها به این معنی نیست که بر روی داده هایی که دیده نشده اند هم به خوبی پیش بینی خواهد کرد. این موضوع نیاز به ارزیابی مستقیم دارد، train_test_split را دیدیم که یک مجموعه داده را به مجموعه آزمون و آموزش تقسیم می‌کند، اما scikit-learn ابزار های زیادی برای ارزیابی مدل دارد، به ویژه برای cross-validation (اعتبار سنجی متقابل).\nما در اینجا با استفاده از cross_validate به طور خلاصه روش ارزیابی متقابل 5-fold را نشان می‌دهیم.\nتوجه داشته باشید که امکنا تکرار دستی fold ها، استفاده از استراتژی های مختلف تقسیم داده و استفاده از توابع امتیاز دهی سفارشی نیز وجود دارد.\nلطفا برای اطلاعات بیشتر به راهنمای کاربر ما مراجعه کنید:\nfrom sklearn.datasets import make_regression from sklearn.linear_model import LinearRegression from sklearn.model_selection import cross_validate X, y = make_regression(n_samples=1000, random_state=0) lr = LinearRegression() result = cross_validate(lr, X, y) # defaults to 5-fold CV result[\u0026#39;test_score\u0026#39;] # r_squared score is high because dataset is easy </p><p>ارزیابی</p><p>مدل</p>",
 							url:"https:\/\/sklearn.ir\/getting-started\/model-evaluation\/"
 						},
 						
@@ -212,13 +219,13 @@
 						
 						{
 							value: "جستجوی خودکار پارامتر ها",
-							label: "<p></p><p></p>",
+							label: "<p>همه برآوردگرها دارای پارامترهایی هستند (که در ادبیات اغلب به آنها hyper-parameter یا اَبَرپارامتر گفته می‌شود) كه می توانند تنظیم شوند.\nقدرت تعمیم یک برآوردگر اغلب به چند پارامتر بستگی دارد. به عنوان مثال یک RandomForestRegressor دارای یک پارامتر n_estimators است که تعداد درختان در جنگل را تعیین می‌کند، و یک پارامتر max_depth که حداکثر عمق هر درخت را تعیین می‌کند. اغلب اوقات، مشخص نیست که مقادیر دقیق این پارامترها باید چه باشد، زیرا آنها به داده های موجود بستگی دارند.\nScikit-learn ابزارهایی را برای یافتن خودکار بهترین ترکیبات پارامترها (از طریق اعتبار سنجی متقابل) فراهم می‌کند. در مثال زیر، ما به طور تصادفی در فضای پارامتر یک جنگل تصادفی توسط یک شی RandomizedSearchCV جستجو می‌کنیم.\nوقتی جستجو به پایان رسید RandomizedSearchCV به عنوان RandomForestRegressor رفتار می‌کند که با بهترین مجموعه پارامترها مجهز شده است. در راهنمای کاربر بیشتر بخوانید:\nfrom sklearn.datasets import fetch_california_housing from sklearn.ensemble import RandomForestRegressor from sklearn.model_selection import RandomizedSearchCV from sklearn.model_selection import train_test_split from scipy.stats import randint X, y = fetch_california_housing(return_X_y=True) X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=0) # define the parameter space that will be searched over param_distributions = {\u0026#39;n_estimators\u0026#39;: randint(1, 5), \u0026#39;max_depth\u0026#39;: randint(5, 10)} # now create a searchCV object and fit it to the data search = RandomizedSearchCV(estimator=RandomForestRegressor(random_state=0), n_iter=5, param_distributions=param_distributions, random_state=0) search.fit(X_train, y_train) search.best_params_ # the search object now acts like a normal random forest estimator # with max_depth=9 and n_estimators=4 search.score(X_test, y_test)  توجه: در عمل، تقریباً همیشه می‌خواهید به جای یک برآوردگر تنها، در یک پایپ لاین جستجو کنید. یکی از دلایل اصلی این است که اگر یک مرحله پیش پردازش را بدون استفاده از پایپ لاین در کل مجموعه داده اعمال کنید و سپس هر نوع اعتبار سنجی متقابل را انجام دهید، شما فرضیه اساسی استقلال بین داده های آموزش و آزمون را خواهید شکست. در واقع، از آنجا که داده ها را با استفاده از کل مجموعه داده پیش پردازش کرده اید، برخی از اطلاعات مربوط به مجموعه های آزمون در دسترس مجموعه های آموزش است. این امر منجر به تخمین بیش از حدی برای قدرت تعمیم برآوردگر می‌شود (می‌توانید اطلاعات بیشتر را در این پست Kaggle دریافت کنید). استفاده از خط لوله برای اعتبار سنجی متقابل و جستجو تا حد زیادی شما را از دام این تله دور می‌کند.\n </p><p>پارامتر</p><p>خودکار</p><p>جستجو</p>",
 							url:"https:\/\/sklearn.ir\/getting-started\/automatic-parameter-searches\/"
 						},
 						
 						{
 							value: "مراحل بعدی",
-							label: "<p></p><p></p>",
+							label: "<p>ما به طور خلاصه fitting و predicting برآوردگر ها، مراحل پیش پردازش، ابزار های اعتبار سنجی متقابل و جستجو خودکار ابر پارامتر هارا شرح دادیم. این راهنما باید به شما یک نمای کلی از برخی از ویژگی های اصلی کتابخانه را ارائه دهد، اما چیزهای بیشتری برای scikit-learn وجود دارد!\nلطفاً برای اطلاعات بیشتر در مورد تمام ابزارهایی که ما ارائه می‌دهیم به راهنمای کاربر ما مراجعه کنید. همچنین می‌توانید لیست کاملی از API عمومی را در مرجع API پیدا کنید.\n</p><p>مراحل</p>",
 							url:"https:\/\/sklearn.ir\/getting-started\/next-steps\/"
 						},
 						
@@ -296,7 +303,7 @@
 						
 						{
 							value: "درباره ما",
-							label: "<p>sklearn.ir وب سایت ترجمه آزاد مستندات آموزش کار با کتابخانه یادگیری ماشین scikit-learn است. تمامی مطالب برگردان شده به فارسی از وب سایت رسمی scikit-learn است که تاییده ترجمه آن به فارسی گرفته شده است، به زودی لینک رجوع به نسخه فارسی در وب سایت رسمی قرار خواهد گرفت.\nپیشبرد این کار توسط مشارکت جمعی افراد علاقه مند در مخزن گیت هاب انجام می‌شود. برای اطلاع از نحوه مشارکت در این کار به قسست ویکی گیت هاب بروید.\n ترجمه یک کار داوطلبانه است و تنها نسخه رسمی \/ آخرین اسناد https:\/\/scikit-learn.org است. تیم sklearn هیچ کنترلی روی این ترجمه ندارد و ممکن است قدیمی باشد. در صورت بروز هرگونه مشكل در ترجمه، issue ها باید به مخزن همین ترجمه منتقل شوند، نه مخزن اصلی scikit-learn.  مشارکت کنندگان به زودی پر خواهد شد.\n</p>",
+							label: "<p>sklearn.ir وب سایت ترجمه آزاد مستندات آموزش کار با کتابخانه یادگیری ماشین scikit-learn است. تمامی مطالب برگردان شده به فارسی از وب سایت رسمی scikit-learn است که تاییده ترجمه آن به فارسی گرفته شده است، به زودی لینک رجوع به نسخه فارسی در وب سایت رسمی قرار خواهد گرفت.\nپیشبرد این کار توسط مشارکت جمعی افراد علاقه مند در مخزن گیت هاب انجام می‌شود. برای اطلاع از نحوه مشارکت در این کار به قسست ویکی گیت هاب بروید.\n ترجمه یک کار داوطلبانه است و تنها نسخه رسمی \/ آخرین اسناد https:\/\/scikit-learn.org است. تیم اصلی scikit-learn هیچ کنترلی روی این ترجمه ندارد و ممکن است قدیمی باشد. در صورت بروز هرگونه مشكل در ترجمه، issue ها باید به مخزن همین ترجمه منتقل شوند، نه مخزن اصلی کتابخانه scikit-learn.  مشارکت کنندگان به زودی پر خواهد شد.\n</p>",
 							url:"https:\/\/sklearn.ir\/about\/"
 						},
 						
@@ -304,6 +311,12 @@
 							value: "راهنمای کاربر",
 							label: "<p></p>",
 							url:"https:\/\/sklearn.ir\/user-guide\/"
+						},
+						
+						{
+							value: "روند ترجمه",
+							label: "<p>شروع به کار  ترجمه به فارسی بازبینی ترجمه ارجاع لینک های داخلی به نسخه ترجمه شده  راهنمای کاربر  ترجمه به فارسی بازبینی ترجمه ارجاع لینک های داخلی به نسخه ترجمه شده  </p>",
+							url:"https:\/\/sklearn.ir\/translate\/"
 						},
 						
 						{
@@ -346,7 +359,7 @@
         <a href="https://sklearn.ir/regression/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
           <i class="ti-stats-up icon text-primary d-block mb-4"></i>
           <h3 class="mb-3 mt-0">رگرسیون</h3>
-          <p class="mb-0">تست</p>
+          
         </a>
       </div>
       
@@ -354,7 +367,7 @@
         <a href="https://sklearn.ir/model-selection/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
           <i class="ti-search icon text-primary d-block mb-4"></i>
           <h3 class="mb-3 mt-0">انتخاب مدل</h3>
-          <p class="mb-0">تست</p>
+          
         </a>
       </div>
       
@@ -362,7 +375,7 @@
         <a href="https://sklearn.ir/clustering/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
           <i class="ti-split-h icon text-primary d-block mb-4"></i>
           <h3 class="mb-3 mt-0">خوشه بندی</h3>
-          <p class="mb-0">تست</p>
+          
         </a>
       </div>
       
@@ -370,7 +383,7 @@
         <a href="https://sklearn.ir/classification/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
           <i class="ti-layout-menu-v icon text-primary d-block mb-4"></i>
           <h3 class="mb-3 mt-0">طبقه بندی</h3>
-          <p class="mb-0">تست</p>
+          
         </a>
       </div>
       
@@ -378,7 +391,7 @@
         <a href="https://sklearn.ir/preprocessing/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
           <i class="ti-bar-chart icon text-primary d-block mb-4"></i>
           <h3 class="mb-3 mt-0">پیش پردازش</h3>
-          <p class="mb-0">تست</p>
+          
         </a>
       </div>
       
@@ -386,7 +399,7 @@
         <a href="https://sklearn.ir/dimensionality-reduction/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
           <i class="ti-angle-down icon text-primary d-block mb-4"></i>
           <h3 class="mb-3 mt-0">کاهش ابعاد</h3>
-          <p class="mb-0">تست</p>
+          
         </a>
       </div>
       

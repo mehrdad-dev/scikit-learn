@@ -14,7 +14,7 @@
   
   <url>
     <loc>https://sklearn.ir/getting-started/transformers-and-preprocessors/</loc>
-    <lastmod>2020-12-09T00:00:00+00:00</lastmod>
+    <lastmod>2020-12-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -24,7 +24,7 @@
   
   <url>
     <loc>https://sklearn.ir/getting-started/pipelines-chaining-pre-processors-and-estimators/</loc>
-    <lastmod>2020-12-09T00:00:00+00:00</lastmod>
+    <lastmod>2020-12-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -39,7 +39,7 @@
   
   <url>
     <loc>https://sklearn.ir/getting-started/model-evaluation/</loc>
-    <lastmod>2020-12-09T00:00:00+00:00</lastmod>
+    <lastmod>2020-12-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -49,17 +49,17 @@
   
   <url>
     <loc>https://sklearn.ir/getting-started/automatic-parameter-searches/</loc>
-    <lastmod>2020-12-09T00:00:00+00:00</lastmod>
+    <lastmod>2020-12-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://sklearn.ir/getting-started/next-steps/</loc>
-    <lastmod>2020-12-09T00:00:00+00:00</lastmod>
+    <lastmod>2020-12-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://sklearn.ir/</loc>
-    <lastmod>2020-12-09T00:00:00+00:00</lastmod>
+    <lastmod>2020-12-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -120,6 +120,10 @@
   
   <url>
     <loc>https://sklearn.ir/user-guide/</loc>
+  </url>
+  
+  <url>
+    <loc>https://sklearn.ir/translate/</loc>
   </url>
   
   <url>
