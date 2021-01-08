@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>scikit-learn به فارسی</title>
-    <link>https://sklearn.ir/</link>
-    <description>Recent content on scikit-learn به فارسی</description>
+    <title>مقدمه ای بر یادگیری ماشین با scikit-learn on scikit-learn به فارسی</title>
+    <link>https://sklearn.ir/tutorial/introduction/</link>
+    <description>Recent content in مقدمه ای بر یادگیری ماشین با scikit-learn on scikit-learn به فارسی</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fa-ir</language>
     <copyright>تمامی حقوق این وب سایت تحت لایسنس [BSD-3-Clause License](https://github.com/mehrdad-dev/scikit-learn/blob/main/LICENSE) محفوظ است.</copyright>
     <lastBuildDate>Fri, 08 Jan 2021 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://sklearn.ir/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://sklearn.ir/tutorial/introduction/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

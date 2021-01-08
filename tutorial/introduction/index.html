@@ -2,7 +2,7 @@
 <html lang="fa-ir">
   <head>
   <meta charset="utf-8">
-  <title>خوشه بندی</title>
+  <title>مقدمه ای بر یادگیری ماشین با scikit-learn</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   
   <meta name="theme-color" content="#f37121"/>
@@ -158,16 +158,6 @@
             <a class="back-btn" href="/"></a>
             
               
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
               
 
 
@@ -177,16 +167,52 @@
 
 
 
-<li data-nav-id="https://sklearn.ir/clustering/" title="خوشه بندی" class="sidelist
+<li data-nav-id="https://sklearn.ir/tutorial/" title="آموزش" class="sidelist
+  ">
+  <a href="https://sklearn.ir/tutorial/">
+    آموزش
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://sklearn.ir/tutorial/introduction/" title="مقدمه ای بر یادگیری ماشین با scikit-learn" class="sidelist
   active">
-  <a href="https://sklearn.ir/clustering/">
-    خوشه بندی
+  <a href="https://sklearn.ir/tutorial/introduction/">
+    مقدمه ای بر یادگیری ماشین با scikit-learn
   </a>
   
   
 </li>
 
 
+        
+      
+    </ul>
+  
+</li>
+
+
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
               
             
               
@@ -210,33 +236,24 @@
       </div>
       <div class="col-lg-9">
         <div class="p-lg-5 p-4 bg-white">
-          <h2  dir="rtl" align="right" class="mb-5">خوشه بندی</h2>
+          <h2  dir="rtl" align="right" class="mb-5">مقدمه ای بر یادگیری ماشین با scikit-learn</h2>
           
-          <div  dir="rtl" align="right" class="bg-light p-4">
-            <ul class="page-list">
-              
+          <div dir="rtl" align="right" class="content">
 
+<div class="notices info" ><p>مطالب این بخش:
+در این بخش، واژگان یادگیری ماشین ای را که در سراسر scikit-learn استفاده می‌کنیم را معرفی می‌کنیم
+و یک مثال یادگیری ساده را ارائه می‌دهیم.</p></div>
 
-
-
-
-
-
-
-<li data-nav-id="https://sklearn.ir/clustering/" title="خوشه بندی" class="sidelist
-  active">
-  <a href="https://sklearn.ir/clustering/">
-    خوشه بندی
-  </a>
-  
-  
-</li>
-
-
-            </ul>
-          </div>
+<h3 id="یادگیری-ماشین-محیط-مسئله">یادگیری ماشین: محیط مسئله</h3>
+<p>به طور کلی، یک مسئله یادگیری مجموعه ای n نمونه داده را در نظر می‌گیرد
+و سپس سعی می‌کند خصوصیات داده های ناشناخته (دیده نشده)
+را پیش‌بینی کند.
+اگر هر نمونه بیش از یک عدد واحد باشد، به عنوان مثال یک ورودی چند بعدی باشد (یا داده های چند متغیره)
+گفته می‌شود که مسئله دارای چندین خواص یا ویژگی است.</p>
+<p>مثال یادگیری به چند دسته تقسیم می‌شوند:</p>
+</div>
           
-          <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 28 Dec 2018</p>
+          <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 08 Jan 2021</p>
           <nav class="pagination mt-3">
             
             
@@ -264,8 +281,6 @@
             
             
             
-            
-            
 
             
             
@@ -273,24 +288,6 @@
             
             
 
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
             
             
             
@@ -316,15 +313,6 @@
             
             
             
-
-            
-            
-            
-            
-            
-
-            
-            
             
             
             
@@ -336,89 +324,6 @@
             
             
 
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
             
             
             
@@ -525,6 +430,37 @@
             
             
             
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
             
             
             
@@ -534,6 +470,53 @@
             
 
             
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
             
             
             
@@ -688,12 +671,44 @@
             
             
             
+            
+            
+            
+            
 
             
-            <a class="nav nav-prev" href="https://sklearn.ir/model-selection/"><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">انتخاب مدل</span></a>
             
             
-            <a class="nav nav-next" href="https://sklearn.ir/classification/"> <span class="d-none d-md-block">طبقه بندی</span><i class="ti-arrow-right ml-2"></i></a>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+            <a class="nav nav-prev" href="https://sklearn.ir/tutorial/"><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">آموزش</span></a>
+            
+            
+            <a class="nav nav-next" href="https://sklearn.ir/donate/"> <span class="d-none d-md-block">حمایت مالی</span><i class="ti-arrow-right ml-2"></i></a>
             
           </nav>
         </div>
