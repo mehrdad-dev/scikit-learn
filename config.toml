@@ -169,20 +169,24 @@ name = "صفحه اصلی"
 url = "/"
 weight = 1
 
+[[Languages.fa.menu.main]]
+name = "آموزش"
+url = "tutorial"
+weight = 2
 
 [[Languages.fa.menu.main]]
 name = "شروع به کار"
 url = "getting-started"
-weight = 4
+weight = 3
 
 [[Languages.fa.menu.main]]
 name = "راهنمای کاربر"
 url = "user-guide"
-weight = 5
+weight = 4
 
 # Dropdown menu
 [[Languages.fa.menu.main]]
-weight = 7
+weight = 5
 name = "بیشتر"
 hasChildren = true
 
