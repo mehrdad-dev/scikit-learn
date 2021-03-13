@@ -8,7 +8,10 @@ draft: false
 scikit-learn است.
 تمامی مطالب برگردان شده به فارسی از
 [وب سایت رسمی scikit-learn](https://scikit-learn.org/stable/index.html#)
-است که تاییده ترجمه آن به فارسی گرفته شده است، به زودی لینک رجوع به نسخه فارسی در وب سایت رسمی قرار خواهد گرفت.
+است که تاییده ترجمه آن به فارسی گرفته شده است.
+
+لینک معرفی ترجمه در وب سایت اصلی scikit-learn:
+[لینک](https://scikit-learn.org/dev/related_projects.html)
 
 پیشبرد این کار توسط مشارکت جمعی افراد علاقه مند در 
 [مخزن گیت هاب](https://github.com/mehrdad-dev/scikit-learn)
