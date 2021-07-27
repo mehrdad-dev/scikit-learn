@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>scikit-learn به فارسی</title>
+    <link>https://sklearn.ir/</link>
+    <description>Recent content on scikit-learn به فارسی</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fa-ir</language>
+    <copyright>تمامی حقوق این وب سایت تحت لایسنس [BSD-3-Clause License](https://github.com/mehrdad-dev/scikit-learn/blob/main/LICENSE) محفوظ است.</copyright>
+    <lastBuildDate>Sat, 13 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://sklearn.ir/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Requirments</title>
+      <link>https://sklearn.ir/regression/requirments/_index.en/</link>
+      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
+      
+      <guid>https://sklearn.ir/regression/requirments/_index.en/</guid>
+      <description>Thanks to the simplicity of Hugo, this page is as empty as this theme needs requirements.
+Just download latest version of Hugo binary (&amp;gt; 0.53) for your OS (Windows, Linux, Mac) : it&amp;rsquo;s that simple.</description>
+    </item>
+    
+    <item>
+      <title>Installation</title>
+      <link>https://sklearn.ir/regression/install/_index.en/</link>
+      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
+      
+      <guid>https://sklearn.ir/regression/install/_index.en/</guid>
+      <description>The following steps are here to help you initialize your new website. If you don&amp;rsquo;t know Hugo at all, we strongly suggest you learn more about it by following this great documentation for beginners.
+Create your project Hugo provides a new command to create a new website.
+hugo new site &amp;lt;new_project&amp;gt; Install the theme Install the Dot theme by following this documentation
+This theme&amp;rsquo;s repository is: https://github.com/themefisher/dot-hugo-documentation-theme.git
+Alternatively, you can download the theme as .</description>
+    </item>
+    
+    <item>
+      <title>Configuration</title>
+      <link>https://sklearn.ir/regression/configuration/_index.en/</link>
+      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
+      
+      <guid>https://sklearn.ir/regression/configuration/_index.en/</guid>
+      <description>Global site parameters On top of Hugo global configuration, Dot lets you define the following parameters in your config.toml (here, values are default).
+Note that some of these parameters are explained in details in other sections of this documentation.
+[params] # Prefix URL to edit current page.  # Useful to give opportunity to people to create merge request for your doc. # See the config.toml file from this documentation site to have an example.</description>
+    </item>
+    
+    <item>
+      <title>Customization</title>
+      <link>https://sklearn.ir/regression/customization/_index.en/</link>
+      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
+      
+      <guid>https://sklearn.ir/regression/customization/_index.en/</guid>
+      <description>Dot has been built to be as configurable as possible.
+Change the logo In config.toml you will find a logo variable. you can change your logo there.
+ Change the favicon If your favicon is a png, just drop off your image in your local static/images/ folder and name it favicon.png
+If you need to change this default behavior, create a new file in layouts/partials/ named head.html. Then write something like this:</description>
+    </item>
+    
+    <item>
+      <title>Elements</title>
+      <link>https://sklearn.ir/regression/elements/_index.en/</link>
+      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
+      
+      <guid>https://sklearn.ir/regression/elements/_index.en/</guid>
+      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.
+Strong emphasis, aka bold, with asterisks or underscores.
+Combined emphasis with asterisks and underscores.
+Strikethrough uses two tildes. Scratch this.
+Link I&amp;rsquo;m an inline-style link
+I&amp;rsquo;m an inline-style link with title
+I&amp;rsquo;m a reference-style link
+I&amp;rsquo;m a relative reference to a repository file
+You can use numbers for reference-style link definitions</description>
+    </item>
+    
+    <item>
+      <title>Installation</title>
+      <link>https://sklearn.ir/regression/_index.en/</link>
+      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
+      
+      <guid>https://sklearn.ir/regression/_index.en/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Billing &amp; Pricing</title>
+      <link>https://sklearn.ir/classification/_index.en/</link>
+      <pubDate>Fri, 28 Dec 2018 11:02:05 +0600</pubDate>
+      
+      <guid>https://sklearn.ir/classification/_index.en/</guid>
+      <description>Many businesses employ full-time pricing analysts or hire an analyst as a consultant for a particular project or concern.
+Pricing analysts look at industry standards, playing close attention to the pricing strategies of their competitors.
+They use mathematical analysis to track pricing trends in the marketplace using industry databases, catalogues and other industry sources. They study consumer habits to determine how much people are willing to pay for various products, and to look for patterns in consumer spending.</description>
+    </item>
+    
+    <item>
+      <title>Features</title>
+      <link>https://sklearn.ir/clustering/_index.en/</link>
+      <pubDate>Fri, 28 Dec 2018 11:02:05 +0600</pubDate>
+      
+      <guid>https://sklearn.ir/clustering/_index.en/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Frequently Asked Questions</title>
+      <link>https://sklearn.ir/faq/_index.en/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sklearn.ir/faq/_index.en/</guid>
+      <description>Will updates also be free?    Lorem, link ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus, repudiandae impedit nam ad enim porro, qui labore fugiat quod suscipit fuga necessitatibus. Perferendis, ipsum?</description>
+    </item>
+    
+    <item>
+      <title>Got Any Questions</title>
+      <link>https://sklearn.ir/contact/_index.en/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sklearn.ir/contact/_index.en/</guid>
+      <description>Submit the form and confirm your email address at Formspree.</description>
+    </item>
+    
+  </channel>
+</rss>
