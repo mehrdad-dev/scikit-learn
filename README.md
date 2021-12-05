@@ -10,7 +10,7 @@
  
 <div dir=rtl align="right">
 
-## ℹ️ درباره sklearn.ir
+##  درباره sklearn.ir
 
   وب‌سایت انجمن فارسی کتابخانه scikit-learn پایتون.
 
