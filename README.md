@@ -3,7 +3,11 @@
   <img src="https://github.com/mehrdad-dev/scikit-learn/blob/main/static/images/scikit-learn-logo-notext.png" alt="scikit-learn" />
 </p>
 
-<h2 align="center"> به فارسی scikit-learn انجمن</h2>
+<h2 align="center" dir=rtl>
+انجمن
+scikit-learn
+به فارسی
+</h2>
  
 </br>
 <br/>
