@@ -7,7 +7,7 @@ draft: false
 
 راه های ارتباطی دیگر:
 
-- صفحه اینستاگرام:  [ai.eng](https://www.instagram.com/ai.eng/)
+<!-- - صفحه اینستاگرام:  [ai.eng](https://www.instagram.com/ai.eng/) -->
 - آدرس ایمیل:  [ایمیل بزنید](mainto:mehrdad.mohammadian.contact@gmail.com)
 
 
