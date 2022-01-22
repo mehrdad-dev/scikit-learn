@@ -244,6 +244,7 @@ pre {
   position: relative;
 }
 
+/* color of background banner gradient */
 .overlay::before {
   position: absolute;
   content: "";
@@ -253,13 +254,20 @@ pre {
   left: 0;
   background: linear-gradient(
     160deg,
-    rgba(255, 243, 211, 1) 0%,
+
+    /* rgba(255, 243, 211, 1) 0%, */
     rgba(255, 178, 96, 1) 17%,
     rgba(42, 98, 128, 1) 59%,
     rgba(52, 153, 205, 1) 100%
   );
   opacity: 0.9;
 }
+
+
+    /* rgba(255, 243, 211, 1) 0%, */
+    /* rgba(255, 178, 96, 1) 17%, */
+    /* rgba(42, 98, 128, 1) 59%, */
+    /* rgba(52, 153, 205, 1) 100% */
 
 .outline-0 {
   outline: 0 !important;
@@ -296,6 +304,7 @@ pre {
 .text-white {
   color: var(--white-color) !important;
   margin-right: -150px;
+  text-shadow: #4b4b4b -2px 2px 5px;
 }
 
 .translate-process-test {

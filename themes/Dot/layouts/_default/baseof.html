@@ -6,6 +6,7 @@
     {{ if .IsHome }}
     {{ "<!-- header -->" | safeHTML }}
     <header class="banner {{if .Site.Params.banner.bg_image}}overlay bg-cover{{else}}bg-primary{{end}}" data-background="{{ .Site.Params.banner.bg_image | absURL }}">
+    <!-- <header class="banner overlay"> -->
       {{ partial "navigation.html" . }}
       {{ partial "banner.html" . }}
     </header>
