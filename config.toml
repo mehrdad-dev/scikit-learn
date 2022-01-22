@@ -29,7 +29,7 @@ logo_white = ""
 github_link = "https://github.com/mehrdad-dev/scikit-learn"
 
 # latest version
-latest_version = "https://scikit-learn.org/stable/auto_examples/release_highlights/plot_release_highlights_0_24_0.html"
+latest_version = "https://scikit-learn.org/stable/auto_examples/release_highlights/plot_release_highlights_1_0_0.html"
 
 # translate process
 translate_process =  "https://sklearn.ir/translate"
