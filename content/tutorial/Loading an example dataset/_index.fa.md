@@ -38,3 +38,5 @@ $ python
 [بخش اختصاصی](https://scikit-learn.org/stable/datasets.html#datasets)
 پیدا کرد.
 
+
+
