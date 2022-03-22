@@ -3,7 +3,7 @@ title: "مقدمه ای بر یادگیری ماشین با scikit-learn"
 title-en: "Machine learning: the problem setting"
 date: 2021-01-08
 lastmod: 2021-03-13
-weight: 2
+weight: 1
 draft: false
 # search related keywords
 keywords: ["scikit-learn", "مقدمه", "یادگیری ماشین"]
